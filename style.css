@@ -1,0 +1,253 @@
+@media screen and (max-width: 1000px) {
+    body{background-image: url(pics/bg.png);
+        margin: 0;
+        padding: 0;}
+/* navbar */
+    .navbar{background-color: #65143d;
+        position: sticky;
+        top: 0px;
+        z-index: 1000;}
+
+        .navbar2{background-color: #f199c5;
+          position: sticky;
+          top: 0px;
+          z-index: 1000;}
+/* toggle button */
+    .btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        border: rgb(176, 32, 32);
+        transition: all 0.5s ease-in-out;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        color: #291313;  
+      }
+      
+    .icon{
+      margin-top: -2% ;
+    }
+    .btn .icon {
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+
+    .btn:hover .icon {
+        width: 175px;
+        cursor: pointer;
+    }
+    
+    .btn:hover  {
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    
+    .btn:focus {
+        outline: none;
+    }
+    
+    .btn:active .icon {
+        transform: scale(0.85);
+    }
+/* container */
+    .container{margin: 7%;
+    }
+/* content */
+    .content{background-color: transparent;
+        height: 4000px;}
+    .ourjourney{
+        margin: 0px;
+        color:#65143d ;
+        font-family: 'Comic Sans MS',cursive,sans-serif;
+        font-size: 110px;
+        font-weight: 560;
+        margin-left: 90px;
+        margin-top: 39%;
+    }
+    .datesback{
+        margin: 0px;
+        color:#65143d ;
+        font-family: 'Comic Sans MS',cursive,sans-serif;
+        font-size: 90px;
+        font-weight: 560;
+        margin-top: 40%;
+        margin-left: 90px;
+        opacity: 0; /* เริ่มต้นให้ซ่อน */
+        transform: translateY(50px); /* เริ่มต้นให้เลื่อนจากด้านล่าง */
+        transition: all 0.6s ease-out;
+    }
+    .datesback2{
+        margin: 0px;
+        color:#b40b0b ;
+        font-family: 'Comic Sans MS',cursive,sans-serif;
+        font-size: 90px;
+        font-weight: 560;
+        margin-left: 90px;
+        margin-top: 40%;
+        opacity: 0; /* เริ่มต้นให้ซ่อน */
+        transform: translateY(50px); /* เริ่มต้นให้เลื่อนจากด้านล่าง */
+        transition: all 0.6s ease-out;
+    
+    }
+   .visible{
+    opacity: 1;
+    transition:ease-out all 0.3s;
+    transform: translateX(50px);
+   }
+   
+   
+  
+   .boxcontainer{
+    align-items: center;
+    background-color: transparent;
+    width: fit-content;
+    height: 1250px;
+    margin: 0px;
+    padding: 100px;
+   }
+   img{
+    border-radius: 10px;
+   }
+
+   /* card */
+
+   .image-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin-left: 27%;
+    margin-bottom: 50%;
+    overflow: hidden; /* ซ่อนข้อมูลที่เลื่อนออกมาจนกว่าจะ hover */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease; /* เพิ่มการเคลื่อนไหวของภาพ */
+}
+
+.info {
+    position: absolute;
+    bottom: -100%; /* ซ่อนข้อมูลเริ่มต้น */
+    left: 0;
+    width: 100%;
+    background-color: rgb(249, 249, 249); /* เพิ่มพื้นหลังโปร่งแสง */
+    color: rgb(102, 7, 105);
+    text-align: center;
+    padding: 10px;
+    transition: bottom 0.5s ease; /* เพิ่มการเลื่อนข้อมูล */
+}
+
+.image-container:hover .info {
+    bottom: 0; /* ข้อมูลจะเลื่อนขึ้นมาทันทีเมื่อ hover */
+}
+
+.image-container:hover img{
+  transform: scale(1.1);
+}
+
+.jek{
+  width: 250px;
+  height: 250px;
+  border-radius: 110px;
+  margin-left: 40%;
+}
+
+.textdec{
+  margin: 0px;
+  color:#c05151 ;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 70px;
+  font-weight: 560;
+}
+
+header{
+  background-image: url(pics/happy\ valentine.png);
+  height: 630px;
+  background-attachment:fixed
+  ;
+}
+.headtext{
+  color:#575252 ;
+  font-family:'Comic Sans MS',cursive,sans-serif;
+  font-size: 90px;
+  font-weight: 560;
+  margin-left: 62%;
+  padding-top: 10%;
+}
+
+.headtext2{
+  color:#cb5955 ;
+  font-family:'Comic Sans MS',cursive,sans-serif;
+  font-size: 120px;
+  font-weight: 560;
+  margin-left: 30%;
+  margin-top: -5%;
+}
+.headtext3{
+  color:#575252 ;
+  font-family:'Comic Sans MS',cursive,sans-serif;
+  font-size: 70px;
+  font-weight: 560;
+  margin-left: 85%;
+  margin-top: -5%;
+}
+
+footer{
+  height: 200px;
+  background-color: aliceblue;
+}
+a{
+  margin: 0;
+  padding: 0;
+}
+.cardbox{
+  width: 700px;
+  height: fit-content;
+  background-color: aliceblue;
+  margin: auto;
+  margin-top: 10%;
+  padding-left:5% ;
+  padding-right:5%;
+  border-radius: 15px;
+  
+}
+.cardcontainer{
+  align-items: center;
+  padding: auto;
+  width: 100%;
+  height: fit-content;
+}
+
+.takkekkek{
+  color:#575252 ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+}
+
+strong{
+  color: #e88989;
+}
+
+.ddd{
+  margin: 0px;
+  color:#c05151 ;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 70px;
+  font-weight: 560;
+  margin-left: 10%;
+
+}
+
+
+}
